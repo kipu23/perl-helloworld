@@ -11,4 +11,4 @@ print("$Id$");
 
 print("\nHello World\n");
 
-print("$Format:%ci$ ($Format:%h$");
+print("$Format:%h$");
