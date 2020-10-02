@@ -1,5 +1,5 @@
 #!/usr/bin/perl 
-  
+
 # Modules used 
 use strict; 
 use warnings; 
@@ -11,4 +11,7 @@ print("$Id$");
 
 print("\nHello World\n");
 
-print("$Format:%h$");
+print("Last commit date: $Format:%cd by %aN$");
+
+
+# Last commit date: $Format:%cd by %aN$
