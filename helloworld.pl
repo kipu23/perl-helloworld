@@ -11,7 +11,7 @@ print("$Id: 4a17d6fe9618f967f4d8c81baa9b38bf1f17cffd $");
 
 print("\nHello World\n");
 
-print("Last commit date: $Format:%cd by %aN$");
+print("$Format:%ci$ ($Format:%h$)");
 
 
-# Last commit date: $Format:%cd by %aN$
+# $Format:%ci$ ($Format:%h$)
