@@ -6,6 +6,7 @@ pipeline {
 			steps {
 				sh "git archive --format=zip --output=helloworld.zip HEAD"
 				sh "unzip -o helloworld.zip"
+				sh "rm helloworld.zip"
 			}
 		}
 		
