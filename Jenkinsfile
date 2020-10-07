@@ -5,7 +5,7 @@ pipeline {
 		stage("Build") {
 			steps {
 				sh "git rev-parse HEAD"
-				sh "git rev-parse HEAD >> version.txt"
+				sh './addgitSHA.sh'
 			}
 		}
 	}
