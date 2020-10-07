@@ -5,6 +5,7 @@ pipeline {
 		stage("Method 2") {
 			steps {
 				sh "git archive --format=zip --output=helloworld.zip HEAD"
+				sh "unzip -o helloworld.zip"
 			}
 		}
 		
