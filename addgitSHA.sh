@@ -1,5 +1,4 @@
 #!/bin/bash
 
 sha=`git rev-parse HEAD`
-
-echo "Git commit SHA: $sha"
+`sed -i 's/ThisWillBeReplaced/$sha/' *.pl`

@@ -5,13 +5,14 @@ use strict;
 use warnings; 
   
 # Print function  
-print("Hello World\n");
+print("Method 1: \n");
 
-print("$Id$");
+print("Commit SHA: $Id$");
 
-print("\nHello World\n");
+print("\nMethod 2:\n");
 
-print("$Format:%ci$ ($Format:%h$)");
+print("Commit SHA: $Format:%h$");
 
+print("\nMethod 3:\n");
 
-# $Format:%ci$ ($Format:%h$)
+print("Commit SHA: ThisWillBeReplaced");

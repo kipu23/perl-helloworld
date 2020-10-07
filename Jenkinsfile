@@ -2,9 +2,13 @@ pipeline {
 	agent any
 
 	stages {
-		stage("Build") {
+		stage("Method 2") {
 			steps {
-				sh "git rev-parse HEAD"
+				sh "git archive --format=zip --output=helloworld.zip master"
+			}
+		}
+		stage("Method 3") {
+			steps {
 				sh './addgitSHA.sh'
 			}
 		}
