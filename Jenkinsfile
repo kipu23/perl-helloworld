@@ -4,8 +4,8 @@ pipeline {
 	stages {
 		stage("Build") {
 			steps {
-				sh "git rev-parse master"
-				sh "git rev-parse master >> version.txt"
+				sh "git rev-parse HEAD"
+				sh "git rev-parse HEAD >> version.txt"
 			}
 		}
 	}
