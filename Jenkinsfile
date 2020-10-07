@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	
-	stages {		
+	stages {
 		stage("Method 2") {
 			steps {
 				sh "git archive --format=zip --output=helloworld.zip HEAD"
