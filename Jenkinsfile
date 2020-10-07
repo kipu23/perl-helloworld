@@ -10,7 +10,7 @@ pipeline {
 		
 		stage("Method 3") {
 			steps {
-				sh "`sed -i "s/ThisWillBeReplaced/`git rev-parse HEAD`/" *.pl`"
+				sh 'sed -i "s/ThisWillBeReplaced/`git rev-parse HEAD`/" *.pl'
 			}
 		}
 	}
